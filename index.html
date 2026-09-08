@@ -385,7 +385,7 @@ Fast and convenient digital assistance for your everyday online needs.
 <div class="cards">
 
 
-<div class="card">
+<div class="card" style="cursor:pointer;" onclick="selectService('Government Online Service')">
 
 <div class="icon">🏛️</div>
 
@@ -810,7 +810,23 @@ function sendRequest(){
     );
 
 }
+function selectService(service){
 
+    document.getElementById("requestForm").style.display = "block";
+
+    var select = document.getElementById("customerService");
+
+    var option = document.createElement("option");
+    option.text = service;
+    option.value = service;
+
+    select.add(option);
+    select.value = service;
+
+    document.getElementById("request").scrollIntoView({
+        behavior: "smooth"
+    });
+}
 </script>
 
 </body>
