@@ -1,489 +1,817 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prince Digital Zone</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial, sans-serif;
-    }
+<title>Prince Digital Zone | Digital & IT Services Nepal</title>
 
-    body{
-      background:#f4f7fb;
-      color:#222;
-    }
+<meta name="description" content="Prince Digital Zone provides online services, computer training, online classes, IT support, typing, printing and digital services in Rupandehi, Nepal.">
 
-    header{
-      background:#0b4da2;
-      color:white;
-      padding:18px 8%;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      flex-wrap:wrap;
-    }
+<style>
 
-    header h1{
-      font-size:28px;
-    }
-
-    nav a{
-      color:white;
-      text-decoration:none;
-      margin:0 10px;
-      font-weight:bold;
-    }
-
-    .hero{
-      background:linear-gradient(135deg,#0b4da2,#00a8e8);
-      color:white;
-      text-align:center;
-      padding:80px 20px;
-    }
-
-    .hero h2{
-      font-size:42px;
-      margin-bottom:15px;
-    }
-
-    .hero p{
-      font-size:19px;
-      margin-bottom:25px;
-    }
-
-    .hero a{
-      display:inline-block;
-      background:#ffb703;
-      color:#111;
-      padding:13px 25px;
-      border-radius:8px;
-      text-decoration:none;
-      font-weight:bold;
-    }
-
-    .section{
-      padding:55px 8%;
-      text-align:center;
-    }
-
-    .section h2{
-      color:#0b4da2;
-      margin-bottom:30px;
-      font-size:32px;
-    }
-
-    .cards{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-      gap:20px;
-    }
-
-    .card{
-      background:white;
-      padding:25px 20px;
-      border-radius:12px;
-      box-shadow:0 4px 15px rgba(0,0,0,0.1);
-      transition:0.3s;
-    }
-
-    .card:hover{
-      transform:translateY(-5px);
-    }
-
-    .card h3{
-      color:#0b4da2;
-      margin-bottom:12px;
-    }
-
-    .card p{
-      line-height:1.6;
-      color:#555;
-    }
-
-    .service-list{
-      margin-top:15px;
-      text-align:left;
-      line-height:1.8;
-    }
-
-    .about{
-      background:white;
-    }
-
-    .contact{
-      background:#eaf3ff;
-    }
-
-    .contact p{
-      margin:10px 0;
-      font-size:17px;
-    }
-
-    .whatsapp{
-      display:inline-block;
-      margin-top:15px;
-      padding:12px 22px;
-      background:#25D366;
-      color:white;
-      text-decoration:none;
-      border-radius:8px;
-      font-weight:bold;
-    }
-
-    footer{
-      background:#071f3d;
-      color:white;
-      text-align:center;
-      padding:20px;
-    }
-
-    @media(max-width:600px){
-      .hero h2{
-        font-size:30px;
-      }
-
-      header{
-        justify-content:center;
-        text-align:center;
-      }
-
-      nav{
-        margin-top:12px;
-      }
-    }
-.contact-buttons{
-  margin-top:20px;
-  display:flex;
-  justify-content:center;
-  gap:12px;
-  flex-wrap:wrap;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
-.contact-buttons a{
-  padding:13px 22px;
-  border-radius:8px;
-  color:white;
-  text-decoration:none;
-  font-weight:bold;
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f8fc;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    background:#074b9b;
+    color:white;
+    padding:12px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.brand img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid white;
+}
+
+.brand h1{
+    font-size:24px;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:8px 10px;
+    font-weight:bold;
+    font-size:14px;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(135deg,#0752a5,#00a9e9);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:28px;
+}
+
+.hero-btn{
+    display:inline-block;
+    background:#ffb703;
+    color:#111;
+    padding:14px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* SECTIONS */
+
+.section{
+    padding:55px 7%;
+    text-align:center;
+}
+
+.section h2{
+    color:#0752a5;
+    font-size:30px;
+    margin-bottom:30px;
+}
+
+.section-subtitle{
+    max-width:700px;
+    margin:-15px auto 30px;
+    color:#666;
+    line-height:1.6;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:22px;
+}
+
+.card{
+    background:white;
+    padding:28px 22px;
+    border-radius:14px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 10px 25px rgba(0,0,0,.14);
+}
+
+.icon{
+    font-size:38px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#0752a5;
+    margin-bottom:12px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.6;
+}
+
+.service-list{
+    text-align:left;
+    color:#555;
+    line-height:1.9;
+}
+
+/* TRAINING */
+
+.training{
+    background:white;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#e9f3ff;
+}
+
+.contact p{
+    margin:9px 0;
+    font-size:16px;
+}
+
+.contact a{
+    color:#0752a5;
+}
+
+/* BUTTONS */
+
+.contact-buttons{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top:22px;
+}
+
+.contact-buttons a,
+.request-open{
+    display:inline-block;
+    padding:14px 24px;
+    border-radius:8px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    border:none;
+    cursor:pointer;
+    font-size:15px;
 }
 
 .call-btn{
-  background:#0b4da2;
+    background:#0752a5;
 }
 
 .whatsapp-btn{
-  background:#25D366;
+    background:#25D366;
 }
 
-.request-btn{
-  background:#ff9800;
+.request-btn,
+.request-open{
+    background:#ff9800;
 }
-  </style>
+
+.contact-buttons a:hover,
+.request-open:hover{
+    opacity:.9;
+}
+
+/* REQUEST FORM */
+
+.request-section{
+    background:white;
+}
+
+#requestForm{
+    display:none;
+    max-width:600px;
+    margin:25px auto 0;
+    background:#f7f9fc;
+    padding:25px;
+    border-radius:14px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.form-control{
+    width:100%;
+    padding:14px;
+    margin:8px 0;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:15px;
+}
+
+textarea.form-control{
+    min-height:110px;
+    resize:vertical;
+}
+
+.send-btn{
+    background:#25D366;
+    color:white;
+    border:none;
+    padding:14px 24px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#06294f;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+    line-height:1.7;
+}
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+    header{
+        justify-content:center;
+        text-align:center;
+    }
+
+    .brand{
+        width:100%;
+        justify-content:center;
+    }
+
+    .brand img{
+        width:60px;
+        height:60px;
+    }
+
+    .brand h1{
+        font-size:20px;
+    }
+
+    nav{
+        margin-top:10px;
+    }
+
+    nav a{
+        margin:6px 7px;
+        font-size:13px;
+    }
+
+    .hero{
+        padding:60px 18px;
+    }
+
+    .hero h2{
+        font-size:30px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .section{
+        padding:45px 18px;
+    }
+
+    .section h2{
+        font-size:25px;
+    }
+}
+
+</style>
 </head>
+
 
 <body>
 
 <header>
- <div style="display:flex;align-items:center;gap:10px;">
- <img src="LOGO.png"
-     alt="Prince Digital Zone Logo"
-     style="width:110px;height:110px;border-radius:50%;object-fit:cover;border:3px solid white;">
 
-  <h1 style="font-size:26px;line-height:1.1;">PRINCE DIGITAL ZONE</h1>
+<div class="brand">
+
+<img src="LOGO.png" alt="Prince Digital Zone Logo">
+
+<h1>PRINCE DIGITAL ZONE</h1>
+
 </div>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#training">Training</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#training">Training</a>
+<a href="#it">IT Services</a>
+<a href="#contact">Contact</a>
+</nav>
+
 </header>
 
 
 <section class="hero" id="home">
-  <h2>Welcome to Prince Digital Zone</h2>
-  <p>All Digital, Online, IT and Computer Services in One Place</p>
-  <a href="#services">View Our Services</a>
+
+<h2>Your Digital Partner</h2>
+
+<p>
+All Digital Services, IT Solutions, Computer Training
+and Online Classes in One Place
+</p>
+
+<a href="#services" class="hero-btn">
+Explore Our Services
+</a>
+
 </section>
 
 
 <section class="section" id="services">
-  <h2>Our Online Services</h2>
 
-  <div class="cards">
+<h2>Our Online Services</h2>
 
-    <div class="card">
-      <h3>Government Online Services</h3>
-      <div class="service-list">
-        ✓ Passport Form<br>
-        ✓ Police Report<br>
-        ✓ Driving License Form<br>
-        ✓ National ID Related Services<br>
-        ✓ PAN Registration<br>
-        ✓ Government Online Forms
-      </div>
-    </div>
+<p class="section-subtitle">
+Fast and convenient digital assistance for your everyday online needs.
+</p>
+
+<div class="cards">
 
 
-    <div class="card">
-      <h3>Foreign Employment Services</h3>
-      <div class="service-list">
-        ✓ EPS Korea Form<br>
-        ✓ DV Lottery Form<br>
-        ✓ Visa Form Assistance<br>
-        ✓ Job Application<br>
-        ✓ Document Preparation<br>
-        ✓ Online Appointment
-      </div>
-    </div>
+<div class="card">
+
+<div class="icon">🏛️</div>
+
+<h3>Government Online Services</h3>
+
+<div class="service-list">
+
+✓ Passport Form<br>
+✓ Police Report<br>
+✓ Driving License Form<br>
+✓ National ID Related Services<br>
+✓ PAN Registration<br>
+✓ Government Online Forms
+
+</div>
+
+</div>
 
 
-    <div class="card">
-      <h3>Online Application Services</h3>
-      <div class="service-list">
-        ✓ School / College Form<br>
-        ✓ Exam Form<br>
-        ✓ Scholarship Form<br>
-        ✓ University Application<br>
-        ✓ Result Check<br>
-        ✓ Admit Card Download
-      </div>
-    </div>
+<div class="card">
+
+<div class="icon">✈️</div>
+
+<h3>Foreign Employment Services</h3>
+
+<div class="service-list">
+
+✓ EPS Korea Form<br>
+✓ DV Lottery Form<br>
+✓ Visa Form Assistance<br>
+✓ Job Application<br>
+✓ Document Preparation<br>
+✓ Online Appointment
+
+</div>
+
+</div>
 
 
-    <div class="card">
-      <h3>Printing & Documentation</h3>
-      <div class="service-list">
-        ✓ Nepali / English Typing<br>
-        ✓ Printing<br>
-        ✓ Scan<br>
-        ✓ Photocopy<br>
-        ✓ CV / Resume Making<br>
-        ✓ Document Formatting
-      </div>
-    </div>
+<div class="card">
 
-  </div>
+<div class="icon">📝</div>
+
+<h3>Online Applications</h3>
+
+<div class="service-list">
+
+✓ School / College Form<br>
+✓ Exam Form<br>
+✓ Scholarship Form<br>
+✓ University Application<br>
+✓ Result Check<br>
+✓ Admit Card Download
+
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🖨️</div>
+
+<h3>Printing & Documentation</h3>
+
+<div class="service-list">
+
+✓ Nepali / English Typing<br>
+✓ Printing<br>
+✓ Scanning<br>
+✓ Photocopy<br>
+✓ CV / Resume Making<br>
+✓ Document Formatting
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 
-<section class="section about" id="training">
-  <h2>Computer Training & Online Classes</h2>
+<section class="section training" id="training">
 
-  <div class="cards">
+<h2>Computer Training & Online Classes</h2>
 
-    <div class="card">
-      <h3>Basic Computer Course</h3>
-      <p>
-        Computer Basics, Windows, Internet, Email,
-        MS Word and daily computer skills.
-      </p>
-    </div>
+<div class="cards">
 
 
-    <div class="card">
-      <h3>Microsoft Office Training</h3>
-      <p>
-        MS Word, Microsoft Excel, PowerPoint,
-        practical office work and shortcuts.
-      </p>
-    </div>
+<div class="card">
+
+<div class="icon">💻</div>
+
+<h3>Basic Computer</h3>
+
+<p>
+Computer basics, Windows, Internet,
+Email, MS Word and practical computer skills.
+</p>
+
+</div>
 
 
-    <div class="card">
-      <h3>Advanced Excel</h3>
-      <p>
-        VLOOKUP, IF, SUMIF, COUNTIF, INDEX MATCH,
-        Data Validation, Charts and Reporting.
-      </p>
-    </div>
+<div class="card">
+
+<div class="icon">📊</div>
+
+<h3>Microsoft Office</h3>
+
+<p>
+MS Word, Microsoft Excel, PowerPoint,
+office work and useful shortcuts.
+</p>
+
+</div>
 
 
-    <div class="card">
-      <h3>Online Classes</h3>
-      <p>
-        Learn computer, Excel, AI and digital skills
-        from home through online classes.
-      </p>
-    </div>
+<div class="card">
 
-  </div>
+<div class="icon">📈</div>
+
+<h3>Advanced Excel</h3>
+
+<p>
+VLOOKUP, IF, SUMIF, COUNTIF,
+INDEX MATCH, Data Validation,
+Charts and Reporting.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎓</div>
+
+<h3>Online Classes</h3>
+
+<p>
+Learn computer, Excel, AI and digital
+skills conveniently from home.
+</p>
+
+</div>
+
+</div>
+
 </section>
 
 
-<section class="section">
-  <h2>IT Services</h2>
+<section class="section" id="it">
 
-  <div class="cards">
+<h2>IT Services</h2>
 
-    <div class="card">
-      <h3>Website Services</h3>
-      <p>
-        Simple websites for businesses, schools,
-        institutes and personal use.
-      </p>
-    </div>
+<div class="cards">
 
 
-    <div class="card">
-      <h3>Software Support</h3>
-      <p>
-        Windows installation, software installation,
-        troubleshooting and computer support.
-      </p>
-    </div>
+<div class="card">
+
+<div class="icon">🌐</div>
+
+<h3>Website Services</h3>
+
+<p>
+Websites for businesses, schools,
+institutes and personal use.
+</p>
+
+</div>
 
 
-    <div class="card">
-      <h3>Digital Design</h3>
-      <p>
-        Posters, banners, certificates,
-        social media posts and digital content.
-      </p>
-    </div>
+<div class="card">
+
+<div class="icon">🛠️</div>
+
+<h3>Software Support</h3>
+
+<p>
+Windows installation, software setup,
+troubleshooting and computer support.
+</p>
+
+</div>
 
 
-    <div class="card">
-      <h3>Online Support</h3>
-      <p>
-        Digital application, email, documents
-        and general online technical assistance.
-      </p>
-    </div>
+<div class="card">
 
-  </div>
+<div class="icon">🎨</div>
+
+<h3>Digital Design</h3>
+
+<p>
+Posters, banners, certificates,
+social media posts and digital content.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🤝</div>
+
+<h3>Online Support</h3>
+
+<p>
+Digital applications, email, documents
+and general online technical assistance.
+</p>
+
+</div>
+
+</div>
+
 </section>
 
 
 <section class="section contact" id="contact">
-  <h2>Contact Prince Digital Zone</h2>
 
-  <p><strong>Prince Digital Zone</strong></p>
-  <p>Digital Services • IT Services • Computer Training • Online Classes</p>
-  <p>Rupandehi, Nepal</p>
+<h2>Contact Prince Digital Zone</h2>
+
+<p><strong>PRINCE DIGITAL ZONE</strong></p>
+
+<p>📍 Rupandehi, Nepal</p>
+
+<p>
+📞 <strong>Phone / WhatsApp:</strong>
++977-9716175657
+</p>
+
+<p>
+✉️ <strong>Email:</strong>
+<a href="mailto:info.prabintech@gmail.com">
+info.prabintech@gmail.com
+</a>
+</p>
+
 
 <div class="contact-buttons">
 
-  <a href="tel:+9779716175657" class="call-btn">
-    📞 Call Now
-  </a>
+<a href="tel:+9779716175657"
+class="call-btn">
+📞 Call Now
+</a>
 
-  <a href="https://wa.me/9779716175657?text=Hello%20Prince%20Digital%20Zone,%20I%20need%20your%20service."
-     target="_blank" class="whatsapp-btn">
-    💬 WhatsApp
-  </a>
 
-  <a href="#request" class="request-btn">
-    📝 Request Service
-  </a>
+<a
+href="https://wa.me/9779716175657?text=Hello%20Prince%20Digital%20Zone,%20I%20need%20your%20service."
+target="_blank"
+class="whatsapp-btn">
+💬 WhatsApp
+</a>
+
+
+<a href="#request"
+class="request-btn">
+📝 Request Service
+</a>
 
 </div>
 
-<p><strong>Prince Digital Zone</strong></p>
-<p>Digital Services • IT Services • Computer Training • Online Classes</p>
-<p>Rupandehi, Nepal</p>
+</section>
 
-<p><strong>Phone / WhatsApp:</strong> +977-9716175657</p>
 
-<p>
-  <strong>Email:</strong>
-  <a href="mailto:info.prabintech@gmail.com">
-    info.prabintech@gmail.com
-  </a>
+<section class="section request-section" id="request">
+
+<h2>Online Service Request</h2>
+
+<p class="section-subtitle">
+Tell us which service you need and send your request directly through WhatsApp.
 </p>
+
+<button
+onclick="openRequestForm()"
+class="request-open">
+
+📝 Open Request Form
+
+</button>
+
+
+<div id="requestForm">
+
+<input
+id="customerName"
+class="form-control"
+type="text"
+placeholder="Your Name">
+
+
+<input
+id="customerPhone"
+class="form-control"
+type="tel"
+placeholder="Mobile Number">
+
+
+<select
+id="customerService"
+class="form-control">
+
+<option value="">Select Required Service</option>
+
+<option>Passport Form</option>
+<option>Police Report</option>
+<option>Driving License</option>
+<option>National ID Service</option>
+<option>EPS Korea</option>
+<option>DV Lottery</option>
+<option>Exam / College Form</option>
+<option>Computer Training</option>
+<option>Online Class</option>
+<option>IT Service</option>
+<option>Typing / Printing</option>
+<option>Website Service</option>
+<option>Other Service</option>
+
+</select>
+
+
+<textarea
+id="customerMessage"
+class="form-control"
+placeholder="Write your message..."></textarea>
+
+
+<button
+onclick="sendRequest()"
+class="send-btn">
+
+Send Request on WhatsApp
+
+</button>
+
+</div>
+
 </section>
 
-<section class="section" id="request">
-  <h2>Online Service Request</h2>
 
-  <button onclick="openRequestForm()" class="request-btn"
-    style="border:none;padding:14px 25px;color:white;border-radius:8px;font-weight:bold;cursor:pointer;">
-    📝 Request Service
-  </button>
+<footer>
 
-  <div id="requestForm" style="display:none; margin-top:25px;">
+<strong>PRINCE DIGITAL ZONE</strong><br>
 
-    <input id="customerName" type="text"
-      placeholder="Your Name"
-      style="width:90%;max-width:500px;padding:13px;margin:7px;border:1px solid #ccc;border-radius:8px;">
+Your Digital Partner<br>
 
-    <br>
+Digital Services • IT Services • Computer Training • Online Classes
 
-    <input id="customerPhone" type="tel"
-      placeholder="Mobile Number"
-      style="width:90%;max-width:500px;padding:13px;margin:7px;border:1px solid #ccc;border-radius:8px;">
+<br><br>
 
-    <br>
+© 2026 Prince Digital Zone. All Rights Reserved.
 
-    <select id="customerService"
-      style="width:90%;max-width:500px;padding:13px;margin:7px;border:1px solid #ccc;border-radius:8px;">
-      <option value="">Select Required Service</option>
-      <option>Passport Form</option>
-      <option>Police Report</option>
-      <option>Driving License</option>
-      <option>EPS Korea</option>
-      <option>DV Lottery</option>
-      <option>Computer Training</option>
-      <option>Online Class</option>
-      <option>IT Service</option>
-      <option>Typing / Printing</option>
-      <option>Other Service</option>
-    </select>
+</footer>
 
-    <br>
-
-    <textarea id="customerMessage"
-      placeholder="Write your message..."
-      style="width:90%;max-width:500px;padding:13px;margin:7px;border:1px solid #ccc;border-radius:8px;"></textarea>
-
-    <br>
-
-    <button onclick="sendRequest()"
-      style="background:#25D366;color:white;border:none;padding:14px 25px;border-radius:8px;font-weight:bold;cursor:pointer;">
-      Send Request on WhatsApp
-    </button>
-
-  </div>
-</section>
 
 <script>
-function openRequestForm(){
-  var form = document.getElementById("requestForm");
 
-  if(form.style.display === "none"){
-    form.style.display = "block";
-  } else {
-    form.style.display = "none";
-  }
+function openRequestForm(){
+
+    var form =
+    document.getElementById("requestForm");
+
+    if(form.style.display === "block"){
+        form.style.display = "none";
+    }
+    else{
+        form.style.display = "block";
+    }
+
 }
 
-function sendRequest(){
-  var name = document.getElementById("customerName").value;
-  var phone = document.getElementById("customerPhone").value;
-  var service = document.getElementById("customerService").value;
-  var message = document.getElementById("customerMessage").value;
 
-  var text =
+function sendRequest(){
+
+    var name =
+    document.getElementById("customerName").value.trim();
+
+    var phone =
+    document.getElementById("customerPhone").value.trim();
+
+    var service =
+    document.getElementById("customerService").value;
+
+    var message =
+    document.getElementById("customerMessage").value.trim();
+
+
+    if(name === ""){
+        alert("Please enter your name.");
+        return;
+    }
+
+
+    if(phone === ""){
+        alert("Please enter your mobile number.");
+        return;
+    }
+
+
+    if(service === ""){
+        alert("Please select a service.");
+        return;
+    }
+
+
+    var text =
     "Hello Prince Digital Zone!" +
     "\n\nName: " + name +
     "\nMobile: " + phone +
-    "\nService: " + service +
+    "\nRequired Service: " + service +
     "\nMessage: " + message;
 
-  window.open(
-    "https://wa.me/9779716175657?text=" + encodeURIComponent(text),
-    "_blank"
-  );
+
+    var whatsappURL =
+    "https://wa.me/9779716175657?text=" +
+    encodeURIComponent(text);
+
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
 }
-</script><footer>
-  © 2026 Prince Digital Zone. All Rights Reserved.
-</footer>
+
+</script>
 
 </body>
 </html>
