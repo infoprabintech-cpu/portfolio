@@ -390,12 +390,11 @@ Fast and convenient digital assistance for your everyday online needs.
 <div class="cards">
 
 
-<div class="card" style="cursor:pointer;" onclick="selectService('Government Online Service')">
-
+<div class="card" style="cursor:pointer;" onclick="toggleServiceDetail(this); selectService('Government Online Service')">
 <div class="icon">🏛️</div>
 
 <h3>Government Online Services</h3>
-<p class="service-detail">
+<p class="service-detail" style="display:none;">
   Online form filling, police report, passport-related assistance,
   driving licence services, exam forms, DV form support and other government online services.
 </p>
@@ -771,7 +770,15 @@ Digital Services • IT Services • Computer Training • Online Classes
 
 
 <script>
+function toggleServiceDetail(card){
+    const detail = card.querySelector('.service-detail');
 
+    if(detail.style.display === "none"){
+        detail.style.display = "block";
+    } else {
+        detail.style.display = "none";
+    }
+}
 function openRequestForm(){
 
     var form =
