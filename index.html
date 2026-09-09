@@ -394,7 +394,7 @@ Fast and convenient digital assistance for your everyday online needs.
 <div class="icon">🏛️</div>
 
 <h3>Government Online Services</h3>
-<p class="service-detail" style="display:none;">
+<div class="service-list" style="display:none;">
   Online form filling, police report, passport-related assistance,
   driving licence services, exam forms, DV form support and other government online services.
 </p>
@@ -772,12 +772,13 @@ Digital Services • IT Services • Computer Training • Online Classes
 <script>
 function toggleServiceDetail(card){
     const detail = card.querySelector('.service-detail');
+    const list = card.querySelector('.service-list');
 
-    if(detail.style.display === "none"){
-        detail.style.display = "block";
-    } else {
-        detail.style.display = "none";
-    }
+    const isHidden = detail.style.display === "none";
+
+    detail.style.display = isHidden ? "block" : "none";
+    list.style.display = isHidden ? "block" : "none";
+}
 }
 function openRequestForm(){
 
