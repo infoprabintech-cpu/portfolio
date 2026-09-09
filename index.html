@@ -555,29 +555,7 @@ html {
 <footer>
     © 2026 Prabin Chaudhary | Personal Website
 </footer>
-<script>
-const sections = document.querySelectorAll(
-    '.skills, .services, .experience, .education, .contact'
-);
 
-sections.forEach(section => {
-    section.classList.add('reveal');
-});
-
-function revealSections() {
-    sections.forEach(section => {
-        const position = section.getBoundingClientRect().top;
-        const screenHeight = window.innerHeight;
-
-        if (position < screenHeight - 80) {
-            section.classList.add('active');
-        }
-    });
-}
-
-
-
-</script>
 <button id="backToTop">↑</button>
 <script src="script.js"></script>
 </body>
