@@ -22,7 +22,9 @@ backToTop.addEventListener("click", function () {
         behavior: "smooth"
     });
 });
-const revealElements = document.querySelectorAll("section");
+const revealElements = document.querySelectorAll(
+    ".skills, .services, .experience, .education, .contact"
+);
 
 revealElements.forEach(element => {
     element.classList.add("reveal");
