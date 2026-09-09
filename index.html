@@ -357,6 +357,20 @@ html {
 html {
     scroll-behavior: smooth;
 }
+#backToTop {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #00d4ff;
+    color: #000;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
 </style>
 </head>
 
@@ -562,6 +576,7 @@ function revealSections() {
 window.addEventListener('scroll', revealSections);
 
 </script>
+<button id="backToTop">↑</button>
 <script src="script.js"></script>
 </body>
 </html>
