@@ -115,3 +115,11 @@ navLinks.forEach(link => {
         navMenu.classList.remove("show");
     });
 });
+const contactLink = document.querySelector('.nav-links a[href="#contact"]');
+
+contactLink.addEventListener("click", () => {
+    setTimeout(() => {
+        navLinks.forEach(link => link.classList.remove("active"));
+        contactLink.classList.add("active");
+    }, 500);
+});
