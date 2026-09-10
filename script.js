@@ -45,7 +45,7 @@ backToTop.addEventListener("click", function () {
     });
 });
 const revealElements = document.querySelectorAll(
-    ".skills, .services, .experience, .education, .contact"
+    ".skills, .services, .experience, .education, .projects, .contact"
 );
 
 revealElements.forEach(element => {
