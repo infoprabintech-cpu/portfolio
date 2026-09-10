@@ -468,7 +468,17 @@ transform: translateY(-6px);
     background: rgba(56, 189, 248, 0.15);
     border-radius: 8px;
 }
-
+.nav-links a:hover:not(.active) {
+    color: #38bdf8;
+    transform: translateY(-2px);
+}
+.nav-links a.active {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.18);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    border-radius: 8px;
+    padding: 7px 10px;
+}
 #backToTop {
     position: fixed;
     bottom: 25px;
