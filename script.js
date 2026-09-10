@@ -65,7 +65,11 @@ const revealObserver = new IntersectionObserver(entries => {
 revealElements.forEach(element => {
     revealObserver.observe(element);
 });
-window.addEventListener("load", () => {
+if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+}
+
+window.addEventListener("pageshow", () => {
     window.scrollTo(0, 0);
 
     navLinks.forEach(link => link.classList.remove("active"));
