@@ -104,22 +104,9 @@ menuToggle.addEventListener("click", () => {
 
    
 });
-const menuToggle = document.getElementById("menuToggle");
-const navMenu = document.querySelector(".nav-links");
 
-menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("show");
-});
 navLinks.forEach(link => {
     link.addEventListener("click", () => {
         navMenu.classList.remove("show");
     });
-});
-const contactLink = document.querySelector('.nav-links a[href="#contact"]');
-
-contactLink.addEventListener("click", () => {
-    setTimeout(() => {
-        navLinks.forEach(link => link.classList.remove("active"));
-        contactLink.classList.add("active");
-    }, 500);
 });
