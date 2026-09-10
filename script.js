@@ -65,3 +65,14 @@ const revealObserver = new IntersectionObserver(entries => {
 revealElements.forEach(element => {
     revealObserver.observe(element);
 });
+window.addEventListener("load", () => {
+    window.scrollTo(0, 0);
+
+    navLinks.forEach(link => link.classList.remove("active"));
+
+    const homeLink = document.querySelector('.nav-links a[href="#home"]');
+
+    if (homeLink) {
+        homeLink.classList.add("active");
+    }
+});
