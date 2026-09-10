@@ -8,17 +8,19 @@ navLinks.forEach(link => {
     });
 });
 window.addEventListener("scroll", () => {
-    let current = "";
+    let current = "home";
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop - 150;
-        const sectionHeight = section.offsetHeight;
+        const sectionTop = section.offsetTop - 180;
 
-        if (window.scrollY >= sectionTop &&
-            window.scrollY < sectionTop + sectionHeight) {
+        if (window.scrollY >= sectionTop) {
             current = section.getAttribute("id");
         }
     });
+
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
+        current = "contact";
+    }
 
     navLinks.forEach(link => {
         link.classList.remove("active");
