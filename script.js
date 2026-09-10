@@ -83,9 +83,15 @@ window.addEventListener("pageshow", () => {
 function confirmCVDownload(event) {
     event.preventDefault();
 
-    const confirmDownload = confirm("Do you want to download my CV?");
+    const answer = confirm("Do you want to download my CV?");
 
-    if (confirmDownload) {
-        window.location.href = "Prabin-Chaudhary-CV.pdf";
+    if (answer) {
+        const link = document.createElement("a");
+        link.href = "Prabin-Chaudhary-CV.pdf";
+        link.download = "Prabin-Chaudhary-CV.pdf";
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
 }
