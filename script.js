@@ -101,3 +101,8 @@ const navMenu = document.querySelector(".nav-links");
 menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("show");
 });
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("show");
+    });
+});
