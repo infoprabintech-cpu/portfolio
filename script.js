@@ -87,9 +87,8 @@ function confirmCVDownload(event) {
 
     if (answer) {
         const link = document.createElement("a");
-        link.href = "Prabin-Chaudhary-CV.pdf";
-        link.download = "Prabin-Chaudhary-CV.pdf";
-
+        link.href = "Ratna-Prasad-Tharu-CV.pdf";
+link.download = "Ratna-Prasad-Tharu-CV.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
