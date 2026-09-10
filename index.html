@@ -311,6 +311,20 @@ letter-spacing: 0.2px;
         padding: 12px;
 text-align: center;
     }
+.menu-toggle {
+    display: block;
+}
+
+.nav-links {
+    display: none;
+    width: 100%;
+}
+
+.nav-links.show {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 .projects {
     grid-template-columns: 1fr;
     margin-left: 15px;
@@ -647,13 +661,25 @@ transform: translateY(-6px);
     background: rgba(56, 189, 248, 0.10);
     border-radius: 6px;
 }
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    color: #7dd3fc;
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
 </style>
 </head>
 
 <body>
 <nav class="navbar">
     <div class="nav-name">Prabin Chaudhary</div>
-
+<button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu">
+    ☰
+</button>
     <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#skills">Skills</a>
@@ -693,6 +719,16 @@ transform: translateY(-6px);
     <span>HTML</span>
     <span>CSS</span>
     <span>JavaScript</span>
+</div>
+<div class="project-tech">
+    <span>Excel</span>
+    <span>Data Analysis</span>
+    <span>Reporting</span>
+</div>
+<div class="project-tech">
+    <span>MS Office</span>
+    <span>Training</span>
+    <span>IT Skills</span>
 </div>
 <a href="https://infoprabintech-cpu.github.io/prince-digital-zone/"
    target="_blank"
