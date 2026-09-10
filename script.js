@@ -80,3 +80,12 @@ window.addEventListener("pageshow", () => {
         homeLink.classList.add("active");
     }
 });
+function confirmCVDownload(event) {
+    event.preventDefault();
+
+    const confirmDownload = confirm("Do you want to download my CV?");
+
+    if (confirmDownload) {
+        window.location.href = "Prabin-Chaudhary-CV.pdf";
+    }
+}
